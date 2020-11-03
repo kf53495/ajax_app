@@ -12,7 +12,6 @@ function check() {
       XHR.responseType = "json";
       XHR.send();
       XHR.onload = () => {
-        binding.pry
         if (XHR.status != 200) {
           alert(`Error ${XHR.status}: ${XHR.statusText}`);
           return null;
